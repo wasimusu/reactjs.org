@@ -235,10 +235,10 @@ class Page extends React.Component {
   render() {
     return (
       <div>
-        <WarningBanner warn={this.state.showWarning} />
         <button onClick={this.handleToggleClick}>
           {this.state.showWarning ? 'Hide' : 'Show'}
         </button>
+        <WarningBanner warn={this.state.showWarning} />
       </div>
     );
   }
